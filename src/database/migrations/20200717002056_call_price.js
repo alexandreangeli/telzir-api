@@ -1,0 +1,16 @@
+exports.up = function (knex) {
+  return knex.schema.raw(`
+    CREATE TABLE "call_price"(
+      id serial not null primary key,
+      origin varchar(3) not null,
+      destiny varchar(3) not null,
+      cents_per_minute int not null
+    )
+  `);
+};
+
+exports.down = function (knex) {
+  return knex.schema.raw(`
+    DROP TABLE "call_price"
+  `);
+};
