@@ -42,13 +42,13 @@ export async function addCallPriceDB(callPrice: CallPriceDB) {
   try {
     const query = `
       insert into call_price
-      (origin, destiny, cents_per_minute)
+      (origin, destination, cents_per_minute)
       values(?, ?, ?)
       returning *
     `;
     const parameters = [
       callPrice.origin,
-      callPrice.destiny,
+      callPrice.destination,
       callPrice.cents_per_minute,
     ];
     const callPriceRes = await dbUtils.returnRow<CallPriceDB>(
@@ -70,7 +70,7 @@ export async function updateCallPriceDB(callPriceReq: CallPriceDB) {
         call_price
       set 
         origin = ?,
-        destiny = ?,
+        destination = ?,
         cents_per_minute = ?
       where 
         id = ?
@@ -78,7 +78,7 @@ export async function updateCallPriceDB(callPriceReq: CallPriceDB) {
     `;
     const parameters = [
       callPriceReq.origin,
-      callPriceReq.destiny,
+      callPriceReq.destination,
       callPriceReq.cents_per_minute,
       callPriceReq.id,
     ];

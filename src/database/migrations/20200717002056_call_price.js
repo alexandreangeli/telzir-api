@@ -3,7 +3,7 @@ exports.up = function (knex) {
     CREATE TABLE "call_price"(
       id serial not null primary key,
       origin varchar(3) not null,
-      destiny varchar(3) not null,
+      destination varchar(3) not null,
       cents_per_minute int not null
     )
   `);
