@@ -14,7 +14,7 @@ export async function getCallPricesDB() {
     return callPrices;
   } catch (err) {
     console.log(err);
-    throw Error("Error getting call prices");
+    throw Error("Error getting call prices: " + err);
   }
 }
 
@@ -34,7 +34,7 @@ export async function getCallPriceByIDDB(id: number) {
     return callPrice;
   } catch (err) {
     console.log(err);
-    throw Error("Error getting call price");
+    throw Error("Error getting call price: " + err);
   }
 }
 
@@ -59,7 +59,7 @@ export async function addCallPriceDB(callPrice: CallPriceDB) {
     return callPriceRes;
   } catch (err) {
     console.log(err);
-    throw Error("Error adding call price");
+    throw Error("Error adding call price: " + err);
   }
 }
 
@@ -90,7 +90,7 @@ export async function updateCallPriceDB(callPriceReq: CallPriceDB) {
     return callPriceRes;
   } catch (err) {
     console.log(err);
-    throw Error("Error updating call price");
+    throw Error("Error updating call price: " + err);
   }
 }
 
@@ -105,6 +105,6 @@ export async function removeCallPriceDB(id: number) {
     await dbUtils.returnNothing<CallPriceDB>(CallPriceDB, query, parameters);
   } catch (err) {
     console.log(err);
-    throw Error("Error removing call price");
+    throw Error("Error removing call price: " + err);
   }
 }

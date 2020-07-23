@@ -13,6 +13,9 @@ module.exports = {
     migrations: {
       directory: "./src/database/migrations",
     },
+    seeds: {
+      directory: "./src/database/seeds",
+    },
     useNullAsDefault: true,
   },
 
@@ -21,6 +24,9 @@ module.exports = {
     connection: process.env.DATABASE_URL,
     migrations: {
       directory: "./src/database/migrations",
+    },
+    seeds: {
+      directory: "./src/database/seeds",
     },
     pool: {
       min: 2,
@@ -35,6 +41,9 @@ module.exports = {
     },
     migrations: {
       directory: "./src/database/migrations",
+    },
+    seeds: {
+      directory: "./src/database/seeds",
     },
     useNullAsDefault: true,
   },
