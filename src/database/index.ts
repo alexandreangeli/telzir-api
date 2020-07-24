@@ -17,8 +17,9 @@ console.log("RUNNING ON " + process.env.NODE_ENV + " " + process.env.PORT);
 const connection = knex(config);
 
 if (process.env.NODE_ENV !== "test")
-  connection
-    .raw("SELECT 'test connection'")
-    .then(async () => await connection.migrate.latest());
+  connection.raw("SELECT 'test connection'").then(async () => {
+    await connection.migrate.latest();
+    await connection.seed.run();
+  });
 
 export default connection;
