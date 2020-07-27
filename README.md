@@ -1,10 +1,10 @@
-## Available Scripts
-
 Back-end CRUD do projeto Telzir feito em Node.js, para manipulação dos preços de ligações entre uma origem e um destino;<br />
 
 Necessário um banco de dados em PostgreSQL. As credenciais para conexão do back-end com o banco são configuradas no arquivo .env;<br />
 
 Esse back-end está rodando em produção na URL https://telzir-falemais-backend.herokuapp.com;<br />
+
+## Available Scripts
 
 ### `npm run dev`
 
