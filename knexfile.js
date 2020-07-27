@@ -35,15 +35,16 @@ module.exports = {
   },
 
   test: {
-    client: "pg",
+    client: "postgres",
     connection: {
-      database: "db_test",
+      host: process.env.CONNECTION_HOST,
+      port: process.env.CONNECTION_PORT,
+      user: process.env.CONNECTION_USER,
+      password: process.env.CONNECTION_PASSWORD,
+      database: process.env.CONNECTION_DATABASE_TEST,
     },
     migrations: {
       directory: "./src/database/migrations",
-    },
-    seeds: {
-      directory: "./src/database/seeds",
     },
     useNullAsDefault: true,
   },
