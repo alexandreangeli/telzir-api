@@ -16,4 +16,4 @@ Executa os testes de integração, testando todas as rotas da API, se a conexão
 
 ### `npm start`
 
-Roda a API em modo de preodução (usada no Heroku);<br />
+Roda a API em modo de produção (usada no Heroku);<br />
