@@ -1,4 +1,4 @@
-Back-end CRUD do projeto Telzir feito em Node.js, para manipulação dos preços de ligações entre uma origem e um destino;<br />
+Back-end CRUD do projeto Telzir feito em Node.js com Typescript, para manipulação dos preços de ligações entre uma origem e um destino;<br />
 
 Necessário um banco de dados em PostgreSQL. As credenciais para conexão do back-end com o banco são configuradas no arquivo .env;<br />
 
