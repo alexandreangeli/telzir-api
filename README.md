@@ -10,6 +10,10 @@ Um coleção no Postman pode ser importada com as rotas disponíveis pela API pe
 
 ## Scripts Disponíveis
 
+### `npm install`
+
+Necessário para instalar todos os pacotes utilizados pelo projeto;<br />
+
 ### `npm run dev`
 
 Roda a API em modo de desenvolvimento na rota http://localhost:5000;<br />
