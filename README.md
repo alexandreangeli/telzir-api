@@ -8,7 +8,7 @@ Esse back-end está rodando em produção na URL https://telzir-falemais-backend
 
 Um coleção no Postman pode ser importada com as rotas disponíveis pela API pela URL https://www.postman.com/collections/b844a01c71a06f6ff04d;
 
-## Available Scripts
+## Scripts Disponíveis
 
 ### `npm run dev`
 
