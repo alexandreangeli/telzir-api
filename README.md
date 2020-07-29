@@ -2,7 +2,11 @@ Back-end CRUD do projeto Telzir feito em Node.js, para manipulação dos preços
 
 Necessário um banco de dados em PostgreSQL. As credenciais para conexão do back-end com o banco são configuradas no arquivo .env;<br />
 
+Ao iniciar a API com a conexão correta com o banco de dados, as tabelas são criadas automaticamente pelas migrações, e populadas com as seeds;<br />
+
 Esse back-end está rodando em produção na URL https://telzir-falemais-backend.herokuapp.com;<br />
+
+Um coleção no Postman pode ser importada com as rotas disponíveis pela API pela URL https://www.postman.com/collections/b844a01c71a06f6ff04d;
 
 ## Available Scripts
 
